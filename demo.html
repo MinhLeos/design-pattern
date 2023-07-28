@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <label for="demo">Nhập vào số tuổi của bạn: </label>
+    <input id="demo" />
+    <br />
+    <button id="btn">Tính tuổi</button>
+    <p id="kq"></p>
+    <script>
+        const inputEle = document.getElementById('demo');
+        const btnEle = document.getElementById('btn');
+        btnEle.addEventListener('click', () => {
+            document.getElementById('kq').innerText = `Số tuổi là: ${inputEle.value}`;
+        });
+    </script>
+</body>
+
+</html>
